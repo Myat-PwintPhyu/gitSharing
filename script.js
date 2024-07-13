@@ -5,5 +5,4 @@ body.appendChild(div);
 
 input.addEventListener("click", () => {
     div.innerHTML = input.value;
-    console.log("hello");
 });
