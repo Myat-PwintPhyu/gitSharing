@@ -1,8 +1,10 @@
 const input = document.getElementById("text-input");
+const btn = document.getElementById("click-btn")
 const body = document.getElementById("body");
-const div = document.createElement("div");
-body.appendChild(div);
+const result = document.getElementById("result");
 
-input.addEventListener("click", () => {
-    div.innerHTML = input.value;
+
+btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    result.innerHTML = input.value
 });
